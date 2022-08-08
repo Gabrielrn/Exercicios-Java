@@ -3,9 +3,9 @@ package ExerciciosLacosDecisoes;
 import java.util.Scanner;
 
 /*
- * 4- Faça um programa em que permita a entrada de um número qualquer e exiba se este
-número é par ou ímpar. Se for par exiba também a raiz quadrada do mesmo; se for
-ímpar exiba o número elevado ao quadrado.
+ * 4- FaÃ§a um programa em que permita a entrada de um nÃºmero qualquer e exiba se este
+nÃºmero Ã© par ou Ã­mpar. Se for par exiba tambÃ©m a raiz quadrada do mesmo; se for
+Ã­mpar exiba o nÃºmero elevado ao quadrado.
  */
 
 public class Ex4 {
@@ -13,18 +13,18 @@ public class Ex4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Digite um número qualquer: ");
-		double num = sc.nextDouble();	
+		System.out.print("Digite um nÃºmero qualquer: ");
+		int num = sc.nextInt();	
 		
 		if(num % 2 == 0) {
-			System.out.printf("\nO número %.2f é par!",num);
+			System.out.printf("\nO nÃºmero %d Ã© par!",num);
 			double raiz = Math.sqrt(num);
-			System.out.printf("\nO número %.2f tem a raíz quadrada de: %.2f",num,raiz);
+			System.out.printf("\nO nÃºmero %d tem a raÃ­z quadrada de: %.2f",num,raiz);
 		}
 		else {
-			System.out.printf("\nO número %.2f é ímpar!",num);
+			System.out.printf("\nO nÃºmero %d Ã© Ã­mpar!",num);
 			double potencia = Math.pow(num,2);
-			System.out.printf("\nO número %.2f elevado ao quadrado é: %.2f",num,potencia);
+			System.out.printf("\nO nÃºmero %d elevado ao quadrado Ã©: %.2f",num,potencia);
 		}
 		
 		sc.close();
