@@ -19,13 +19,21 @@ public class Ex6_DoWhile {
 		do {
 			System.out.println("\nDigite um número: ");
 			n = sc.nextInt();
-			if(n % 3 == 0) {
+			if(n == 0) {
+				System.out.println("\nEncerrando...");
+			}
+			else if(n % 3 == 0) {
 				soma += n;
 				cont++;
 			}
 		}while(n != 0);
-		cont -=1;
-		System.out.println("\nMédia dos números multiplos de 3: "+soma/cont);
+		if(cont == 0) {
+			System.out.println("\nNão é possível fazer uma divisão por 0!");
+		}
+		else {
+			media = soma / cont;
+			System.out.println("\nMédia dos números multiplos de 3: "+media);
+		}
 	}
 	
 }
